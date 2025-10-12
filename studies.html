@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galería de estudios corneales - MS-39 Viewer">
+    <title>Estudios - MS-39 Viewer</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="site-title">
+                <span aria-hidden="true">📊</span>
+                MS-39 Viewer
+            </a>
+            <nav aria-label="Navegación principal">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="studies.html">Estudios</a></li>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                            <span aria-hidden="true">🌙</span> Modo Oscuro
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        <h1 class="mb-3">Estudios Disponibles</h1>
+        
+        <!-- Filter Bar -->
+        <section class="filter-bar" aria-label="Filtros de búsqueda">
+            <form class="filter-controls" role="search" onsubmit="return false;">
+                <div class="filter-group">
+                    <label for="search-input">
+                        <span aria-hidden="true">🔍</span> Buscar
+                    </label>
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        placeholder="Buscar por título, clase o ID..."
+                        aria-label="Campo de búsqueda"
+                    >
+                </div>
+                
+                <div class="filter-group">
+                    <label for="type-filter">
+                        <span aria-hidden="true">📊</span> Tipo de Gráfico
+                    </label>
+                    <select id="type-filter" aria-label="Filtrar por tipo">
+                        <option value="all">Todos los tipos</option>
+                        <option value="quad">Quad</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="row-filter">
+                        <span aria-hidden="true">🔢</span> Índice de Fila
+                    </label>
+                    <select id="row-filter" aria-label="Filtrar por fila">
+                        <option value="all">Todas las filas</option>
+                        <!-- Options populated by JavaScript -->
+                    </select>
+                </div>
+            </form>
+        </section>
+        
+        <!-- Gallery Container -->
+        <section id="gallery-container" aria-label="Galería de estudios" aria-live="polite">
+            <div class="loading">
+                <p>Cargando estudios...</p>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 MS-39 Viewer. Visualizaciones de estudios corneales.</p>
+            <p>
+                <a href="about.html">Privacidad</a> · 
+                <a href="studies.html">Estudios</a> · 
+                <a href="https://github.com/4bm4/Graphs_examples" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </p>
+        </div>
+    </footer>
+    
+    <script src="assets/app.js"></script>
+</body>
+</html>

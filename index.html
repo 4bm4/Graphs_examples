@@ -3,12 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplos de Gráficos</title>
+    <meta name="description" content="MS-39 Viewer - Visualizaciones interactivas de estudios corneales">
+    <title>MS-39 Viewer - Inicio</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <h1>Mis Gráficos</h1>
-    <ul>
-        <li><a href="interactive_gallery.html">Ej</a></li>
-    </ul>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="site-title">
+                <span aria-hidden="true">📊</span>
+                MS-39 Viewer
+            </a>
+            <nav aria-label="Navegación principal">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="studies.html">Estudios</a></li>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                            <span aria-hidden="true">🌙</span> Modo Oscuro
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Bienvenido a MS-39 Viewer</h1>
+            <p>
+                Plataforma profesional para visualizar estudios corneales interactivos. 
+                Explore gráficos generados con Plotly de forma sencilla y eficiente.
+            </p>
+            <div class="hero-buttons">
+                <a href="studies.html" class="btn btn-primary">
+                    <span aria-hidden="true">🔬</span> Ver Estudios
+                </a>
+                <a href="about.html" class="btn btn-secondary">
+                    <span aria-hidden="true">ℹ️</span> Más Información
+                </a>
+            </div>
+        </section>
+        
+        <!-- Features Section -->
+        <section class="about-section">
+            <h2>Características</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="card-title">
+                        <span aria-hidden="true">📈</span> Visualizaciones Interactivas
+                    </h3>
+                    <p class="card-meta">
+                        Gráficos 3D interactivos generados con Plotly que permiten explorar 
+                        los datos desde diferentes perspectivas.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">
+                        <span aria-hidden="true">🔍</span> Búsqueda y Filtros
+                    </h3>
+                    <p class="card-meta">
+                        Encuentre rápidamente el estudio que necesita con nuestro sistema 
+                        de búsqueda y filtros avanzados.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">
+                        <span aria-hidden="true">🌓</span> Modo Oscuro
+                    </h3>
+                    <p class="card-meta">
+                        Cambie entre temas claro y oscuro según su preferencia, con 
+                        sincronización automática del sistema.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">
+                        <span aria-hidden="true">📱</span> Diseño Responsivo
+                    </h3>
+                    <p class="card-meta">
+                        Acceda desde cualquier dispositivo - escritorio, tablet o móvil - 
+                        con una experiencia optimizada.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">
+                        <span aria-hidden="true">🔒</span> Privacidad
+                    </h3>
+                    <p class="card-meta">
+                        Todas las visualizaciones son anónimas. No se expone información 
+                        sensible de pacientes.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">
+                        <span aria-hidden="true">♿</span> Accesible
+                    </h3>
+                    <p class="card-meta">
+                        Cumple con estándares de accesibilidad AA, incluyendo contraste, 
+                        navegación por teclado y lectores de pantalla.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 MS-39 Viewer. Visualizaciones de estudios corneales.</p>
+            <p>
+                <a href="about.html">Privacidad</a> · 
+                <a href="studies.html">Estudios</a> · 
+                <a href="https://github.com/4bm4/Graphs_examples" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </p>
+        </div>
+    </footer>
+    
+    <script src="assets/app.js"></script>
 </body>
 </html>
