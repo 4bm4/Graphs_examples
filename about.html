@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acerca de MS-39 Viewer - Información y privacidad">
+    <title>Acerca de - MS-39 Viewer</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="site-title">
+                <span aria-hidden="true">📊</span>
+                MS-39 Viewer
+            </a>
+            <nav aria-label="Navegación principal">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="studies.html">Estudios</a></li>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                            <span aria-hidden="true">🌙</span> Modo Oscuro
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        <h1 class="mb-3">Acerca de MS-39 Viewer</h1>
+        
+        <!-- About Section -->
+        <section class="about-section">
+            <h2>¿Qué es MS-39 Viewer?</h2>
+            <p>
+                MS-39 Viewer es una plataforma web estática diseñada para visualizar estudios 
+                corneales de manera profesional, simple e interactiva. La plataforma permite 
+                explorar visualizaciones 3D generadas con Plotly en un entorno limpio y accesible.
+            </p>
+            <p>
+                Este proyecto proporciona una interfaz moderna para navegar entre múltiples 
+                estudios, con funcionalidades de búsqueda, filtrado y visualización optimizada 
+                para dispositivos de escritorio y móviles.
+            </p>
+        </section>
+        
+        <!-- Features Section -->
+        <section class="about-section">
+            <h2>Características Principales</h2>
+            <ul>
+                <li><strong>Visualizaciones Interactivas:</strong> Gráficos 3D generados con Plotly que permiten rotar, hacer zoom y explorar los datos.</li>
+                <li><strong>Búsqueda y Filtros:</strong> Sistema de filtrado por tipo de gráfico, clase y número de fila para encontrar estudios rápidamente.</li>
+                <li><strong>Diseño Responsivo:</strong> Interfaz optimizada para todos los tamaños de pantalla, desde móviles hasta escritorios de alta resolución.</li>
+                <li><strong>Modo Oscuro:</strong> Cambio automático o manual entre temas claro y oscuro, con persistencia de preferencias.</li>
+                <li><strong>Accesibilidad:</strong> Cumple con estándares WCAG 2.1 AA, incluyendo navegación por teclado, contraste adecuado y compatibilidad con lectores de pantalla.</li>
+                <li><strong>Compartir Enlaces:</strong> Copie enlaces directos a visualizaciones específicas para compartir con colegas.</li>
+            </ul>
+        </section>
+        
+        <!-- Technology Section -->
+        <section class="about-section">
+            <h2>Tecnología</h2>
+            <p>
+                MS-39 Viewer está construido como un sitio web estático utilizando tecnologías 
+                web estándar:
+            </p>
+            <ul>
+                <li><strong>HTML5:</strong> Estructura semántica y accesible.</li>
+                <li><strong>CSS3:</strong> Estilos personalizados sin frameworks pesados, con variables CSS y diseño responsivo.</li>
+                <li><strong>JavaScript Vanilla:</strong> Lógica de aplicación sin dependencias externas.</li>
+                <li><strong>Plotly.js:</strong> Biblioteca de visualización para gráficos interactivos (incluida en los archivos HTML individuales).</li>
+            </ul>
+            <p>
+                El sitio es completamente estático y puede alojarse en cualquier servidor web, 
+                incluyendo GitHub Pages, Netlify, Vercel o AWS S3.
+            </p>
+        </section>
+        
+        <!-- Privacy Section -->
+        <section class="about-section">
+            <h2>Privacidad y Seguridad</h2>
+            <h3>Protección de Datos</h3>
+            <p>
+                MS-39 Viewer ha sido diseñado con la privacidad como prioridad. Todas las 
+                visualizaciones son completamente anónimas:
+            </p>
+            <ul>
+                <li>No se incluye ni se expone información de identificación de pacientes (patient_ID u otros datos sensibles).</li>
+                <li>Los datos mostrados en las visualizaciones están agregados y anonimizados.</li>
+                <li>No se recopilan datos de usuarios ni se utilizan cookies de seguimiento.</li>
+                <li>El sitio no se conecta a servidores externos excepto para cargar los gráficos locales.</li>
+            </ul>
+            
+            <h3>Almacenamiento Local</h3>
+            <p>
+                El sitio utiliza localStorage únicamente para guardar la preferencia del tema 
+                (claro/oscuro). Esta información permanece en su dispositivo y nunca se transmite 
+                a ningún servidor.
+            </p>
+            
+            <h3>Seguridad</h3>
+            <p>
+                Todas las visualizaciones están embebidas mediante iframes con políticas de 
+                referrer restrictivas (no-referrer) para proteger la privacidad de navegación. 
+                El sitio puede servirse de forma segura mediante HTTPS.
+            </p>
+        </section>
+        
+        <!-- Usage Section -->
+        <section class="about-section">
+            <h2>Cómo Usar</h2>
+            <ol>
+                <li><strong>Explorar Estudios:</strong> Visite la página de <a href="studies.html">Estudios</a> para ver todos los gráficos disponibles.</li>
+                <li><strong>Filtrar:</strong> Use los controles de búsqueda y filtros para encontrar estudios específicos por clase, tipo o fila.</li>
+                <li><strong>Visualizar:</strong> Haga clic en "Ver Gráfico" en cualquier tarjeta para abrir el visor interactivo.</li>
+                <li><strong>Interactuar:</strong> En el visor, puede rotar, hacer zoom y explorar el gráfico 3D usando el mouse o pantalla táctil.</li>
+                <li><strong>Compartir:</strong> Use el botón "Copiar Enlace" para compartir una visualización específica.</li>
+            </ol>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="about-section">
+            <h2>Contacto y Contribuciones</h2>
+            <p>
+                Este proyecto es de código abierto y está disponible en 
+                <a href="https://github.com/4bm4/Graphs_examples" target="_blank" rel="noopener noreferrer">GitHub</a>.
+            </p>
+            <p>
+                Si encuentra algún problema o tiene sugerencias para mejorar la plataforma, 
+                no dude en abrir un issue en el repositorio de GitHub.
+            </p>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 MS-39 Viewer. Visualizaciones de estudios corneales.</p>
+            <p>
+                <a href="about.html">Privacidad</a> · 
+                <a href="studies.html">Estudios</a> · 
+                <a href="https://github.com/4bm4/Graphs_examples" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </p>
+        </div>
+    </footer>
+    
+    <script src="assets/app.js"></script>
+</body>
+</html>

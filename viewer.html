@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visor de estudios corneales - MS-39 Viewer">
+    <title>Visor - MS-39 Viewer</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="site-title">
+                <span aria-hidden="true">📊</span>
+                MS-39 Viewer
+            </a>
+            <nav aria-label="Navegación principal">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="studies.html">Estudios</a></li>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                            <span aria-hidden="true">🌙</span> Modo Oscuro
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        <div class="viewer-container">
+            <!-- Sidebar with Metadata and Actions -->
+            <aside class="viewer-sidebar" aria-label="Metadatos del estudio">
+                <div class="viewer-meta">
+                    <h2 id="viewer-title">Cargando...</h2>
+                    
+                    <div class="viewer-meta-item">
+                        <div class="viewer-meta-label">Índice de Fila</div>
+                        <div id="viewer-row" class="viewer-meta-value">-</div>
+                    </div>
+                    
+                    <div class="viewer-meta-item">
+                        <div class="viewer-meta-label">Clase</div>
+                        <div id="viewer-class" class="viewer-meta-value">-</div>
+                    </div>
+                    
+                    <div class="viewer-meta-item">
+                        <div class="viewer-meta-label">Tipo de Gráfico</div>
+                        <div id="viewer-type" class="viewer-meta-value">-</div>
+                    </div>
+                </div>
+                
+                <div class="viewer-actions">
+                    <button id="copy-link-btn" class="btn btn-secondary btn-sm">
+                        <span aria-hidden="true">📋</span> Copiar Enlace
+                    </button>
+                    <button id="open-tab-btn" class="btn btn-secondary btn-sm">
+                        <span aria-hidden="true">🔗</span> Abrir en Nueva Pestaña
+                    </button>
+                    <a href="studies.html" class="btn btn-primary btn-sm">
+                        <span aria-hidden="true">←</span> Volver a Estudios
+                    </a>
+                </div>
+            </aside>
+            
+            <!-- Main Viewer Area -->
+            <div class="viewer-main">
+                <iframe 
+                    id="plot-iframe"
+                    class="plot-frame"
+                    src=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer"
+                    title="Visualización de estudio corneal"
+                    aria-label="Gráfico interactivo del estudio"
+                ></iframe>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 MS-39 Viewer. Visualizaciones de estudios corneales.</p>
+            <p>
+                <a href="about.html">Privacidad</a> · 
+                <a href="studies.html">Estudios</a> · 
+                <a href="https://github.com/4bm4/Graphs_examples" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </p>
+        </div>
+    </footer>
+    
+    <script src="assets/app.js"></script>
+</body>
+</html>
