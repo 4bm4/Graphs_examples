@@ -4,7 +4,7 @@ Una plataforma web estática profesional para visualizar estudios corneales inte
 
 ## 🌟 Características
 
-- **Visualizaciones Interactivas**: Gráficos 3D con Plotly embebidos en iframes
+- **Visualizaciones Interactivas**: Gráficos 3D con Plotly que se abren directamente en nuevas pestañas
 - **Galería con Filtros**: Búsqueda y filtrado por tipo, clase y fila
 - **Diseño Responsivo**: Optimizado para escritorio y móvil
 - **Modo Oscuro**: Cambio automático o manual con persistencia de preferencias
@@ -17,14 +17,14 @@ Una plataforma web estática profesional para visualizar estudios corneales inte
 .
 ├── index.html              # Página de inicio
 ├── studies.html            # Galería de estudios
-├── viewer.html             # Visor de gráficos individuales
+├── viewer.html             # Visor de gráficos individuales (deprecado)
 ├── about.html              # Información y privacidad
 ├── assets/
 │   ├── styles.css          # Estilos personalizados
 │   ├── app.js              # Lógica de la aplicación
 │   └── favicon.svg         # Icono del sitio
 ├── reports/
-│   └── figs_html/          # Archivos HTML de Plotly
+│   └── figs_html/          # Archivos HTML de Plotly (se abren directamente)
 │       ├── Croissant_4.html
 │       ├── DUCK_4.html
 │       ├── NIPPLE_4.html
@@ -207,7 +207,7 @@ body {
 - No se utilizan cookies de seguimiento
 - localStorage solo guarda la preferencia del tema
 - Todas las visualizaciones son anónimas (sin patient_ID)
-- Los iframes usan `referrerpolicy="no-referrer"`
+- Los gráficos se abren en pestañas nuevas con `rel="noopener noreferrer"`
 
 ## 📄 Licencia
 

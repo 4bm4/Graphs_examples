@@ -135,7 +135,7 @@ function createCardHTML(chart) {
         <div>Tipo: ${chart.type}</div>
       </div>
       <div class="card-actions">
-        <a href="viewer.html?id=${chart.id}" class="btn btn-primary">
+        <a href="reports/figs_html/${chart.filename}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
           <span aria-hidden="true">👁️</span> Ver Gráfico
         </a>
       </div>
